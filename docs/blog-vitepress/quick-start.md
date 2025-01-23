@@ -1,12 +1,23 @@
 # 快速开始
 
+## 前置准备
+
+- [Node.js](https://nodejs.org/) 18 及以上版本。
+- 通过命令行界面 (CLI) 访问 VitePress 的终端。
+- 支持 [Markdown](https://en.wikipedia.org/wiki/Markdown) 语法的编辑器。
+- [GitHub](https://github.com/) 账号。
+
+::: tip 
+本文中出现的仓库名或仓库地址请自行替换。
+:::
+
+## 创建部署 VitePress 应用
+
 登录 GitHub 官网，在 GitHub 任何页面的右上角，选择 **+**，然后单击“New repository”。
 
-<img src="https://r2storage.us.kg/markdown/blog-vitepress/quick-start/GitHub%20-%20%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%20-%20%E7%82%B9%E5%87%BB%E6%96%B0%E5%BB%BA%E6%8C%89%E9%92%AE.webp" alt="创建存储库" style="zoom: 50%;" />
+<img src="https://r2storage.us.kg/markdown/blog-vitepress/quick-start/GitHub%20-%20%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%20-%20%E7%82%B9%E5%87%BB%E6%96%B0%E5%BB%BA%E6%8C%89%E9%92%AE.webp" alt="创建存储库" style="zoom: 50%;margin: 0 auto;" />
 
-输入存储库名称等信息，单击“创建存储库”，完成存储库的创建。创建存储库时需要注意以下几点：
-
-- 仓库的可见性应该设置为 `public`。
+输入存储库名称等信息，单击“创建存储库”，完成存储库的创建。创建存储库时需要注意仓库的可见性应该设置为 `public`。
 
 ![新建仓库 - 配置仓库](https://r2storage.us.kg/markdown/blog-vitepress/quick-start/GitHub%20-%20%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%20-%20%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93.png)
 
