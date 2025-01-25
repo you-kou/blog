@@ -184,10 +184,8 @@ git push -u origin main
 ## 参考资料
 
 - [VitePress 快速开始](https://vitepress.dev/zh/guide/getting-started)
-
 - [VitePress 站点配置](https://vitepress.dev/zh/reference/site-config#base)
-
+- [VitePress 各平台部署指南](https://vitepress.dev/zh/guide/deploy#platform-guides)
 - [创建 GitHub Pages 站点](https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site)
-
 - [使用自定义工作流](https://docs.github.com/zh/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 
