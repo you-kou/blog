@@ -51,7 +51,7 @@ Oracle JDK 是由 Oracle 公司开发并维护的 Java 开发工具包，作为 
 
 ### OpenJDK
 
-<img title="" src="https://openjdk.org/images/openjdk.png" alt="" data-align="center">
+<img title="" src="https://r2.code-snippet.online/md/java/jdk/openjdk.png" alt="">
 
 OpenJDK 是一个开源的 JDK 项目，它的诞生源于开源运动的兴起。2006 年，为满足社区对开源 Java 实现的需求，Sun Microsystems 将 Java 的大部分源代码开源，从而形成了 OpenJDK 项目。自此，OpenJDK 成为 Java 社区共同开发和维护的基础，任何人都能参与其开发过程，极大地促进了 Java 技术的快速发展与创新。
 
@@ -93,6 +93,8 @@ Oracle 是 Java 技术的原开发者和重要推动者，虽然 Oracle JDK 有�
 
 ##### Alibaba Dragonwell
 
+<img title="" src="https://r2.code-snippet.online/md/java/jdk/alibaba-dragonwell.jpg" alt="">
+
 由阿里巴巴基于 OpenJDK 开发，经过阿里巴巴内部大规模业务场景的验证和优化。
 
 针对电商、金融等互联网业务场景进行了性能优化，例如在高并发处理、内存管理等方面表现出色。提供长期支持，保障企业应用的稳定运行。
@@ -105,3 +107,9 @@ Oracle 是 Java 技术的原开发者和重要推动者，虽然 Oracle JDK 有�
 - [Oracle OpenJDK 下载](https://jdk.java.net/archive/)
 - [Oracle JDK 下载](https://www.oracle.com/java/technologies/downloads/?er=221886)
 - [OpenJDK 官网](https://openjdk.org/)
+
+<style module>
+img {
+  margin: 0 auto;
+}
+</style>
