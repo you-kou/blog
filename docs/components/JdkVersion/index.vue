@@ -31,7 +31,7 @@ const versionClass = (version) => {
 }
 
 onMounted(() => {
-  axios.get('https://jdk.workers.code-snippet.online/versions')
+  axios.get('https://jdk.worker.code-snippet.online/versions')
     .then((response) => {
       versions.value = response.data;
     });
