@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Lazyers博客"
+  name: "CodeSnippet"
 #  text: "A VitePress Site"
 #  tagline: My great project tagline
   actions:
@@ -15,8 +15,8 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 工具
+    details: 工欲善其事，必先利其器！
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
