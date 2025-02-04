@@ -90,6 +90,74 @@
 
 **[Redis Insight](https://redis.io/insight/)** 是 Redis 官方推出的一款**可视化管理工具**，用于监控、管理和优化 Redis 数据库。它提供直观的**图形界面**，支持**实时数据浏览、查询执行、性能分析**等功能，帮助开发者更方便地调试和优化 Redis。无论是查看键值数据、分析内存使用，还是执行命令和管理集群，Redis Insight 都能提升 Redis 的可操作性和可观测性，适用于本地开发和生产环境。
 
+## 项目构建管理
+
+**项目构建管理**是指在软件开发过程中，通过自动化工具对 **代码编译、依赖管理、测试、打包、部署** 等流程进行统一管理，以提高开发效率、减少人为错误，确保项目的可维护性和可复用性。
+
+**核心内容**：
+
+1. **依赖管理**：自动下载和管理项目所需的库（如 Maven/Gradle 处理 Java 依赖，NPM 处理 JavaScript 依赖）。
+2. **代码编译**：将源代码转换为可执行文件或可运行的格式（如 Java 编译成 `.class` 文件）。
+3. **测试执行**：自动运行单元测试、集成测试，确保代码质量（如 JUnit、Mocha）。
+4. **打包与发布**：生成可部署的文件（如 JAR、WAR、Docker 镜像），并推送到仓库或服务器。
+5. **自动化构建**：结合 CI/CD（持续集成/持续部署）工具，实现从代码提交到生产环境的全流程自动化。
+
+**常见的构建管理工具**：
+
+- **Java**：Maven、Gradle
+- **JavaScript**：NPM、PNPM、Yarn、Webpack
+- **Python**：pip、Poetry
+- **CI/CD**：Jenkins、GitHub Actions、GitLab CI/CD
+
+### Maven
+
+<img src="https://r2.code-snippet.online/md/tool/introduction/Maven.webp" style="margin:0 auto;" />
+
+**[Maven](https://maven.apache.org/)** 是一个基于 **Java** 的 **项目构建管理工具**，用于自动化管理 **项目构建、依赖管理和生命周期**。它主要用于 **Java 项目**，但也可用于其他语言的项目。
+
+### Gradle
+
+<img src="https://r2.code-snippet.online/md/tool/introduction/Gradle.webp" style="margin:0 auto;" />
+
+**[Gradle](https://gradle.org/)** 是一种 **现代化的构建工具**，用于自动化管理 **项目构建、依赖管理** 和 **持续集成**，广泛用于 **Java、Kotlin、Android** 以及其他编程语言的项目。它比 **Maven** 更灵活，支持 **Groovy 或 Kotlin DSL** 进行配置，并提供更高的构建性能。
+
+#### **Gradle vs Maven**：
+
+| 特性       | Gradle                   | Maven               |
+| ---------- | ------------------------ | ------------------- |
+| 配置语言   | Groovy/Kotlin DSL        | XML                 |
+| 构建速度   | 快（增量构建+并行执行）  | 较慢（全量构建）    |
+| 依赖管理   | 支持多种仓库             | 主要基于 Maven 仓库 |
+| 插件扩展性 | 强（支持自定义）         | 较固定              |
+| 适用场景   | Java、Android、Kotlin 等 | Java 项目           |
+
+### NPM
+
+<img src="https://r2.code-snippet.online/md/tool/introduction/NPM.png" style="margin:0 auto;" />
+
+**[NPM](https://nodejs.org/)（Node Package Manager）** 是 **Node.js** 的包管理工具和运行时环境，主要用于 **管理 JavaScript 依赖、发布和安装模块**。它是前端开发中最常用的工具之一，广泛应用于 **Web 开发、前端框架（如 React、Vue、Angular）** 以及 **后端 Node.js 应用**。
+
+### PNPM
+
+<img src="https://r2.code-snippet.online/md/tool/introduction/PNPM.png" style="margin:0 auto;" />
+
+**[PNPM](https://pnpm.io/)（Performant NPM）** 是一种 **高效的 Node.js 包管理工具**，与 **NPM 和 Yarn** 类似，但它使用了一种更优化的方式来管理依赖，能够显著 **减少磁盘占用并提升安装速度**。
+
+### Yarn
+
+<img src="https://r2.code-snippet.online/md/tool/introduction/Yarn.png" style="margin:0 auto;" />
+
+**[Yarn](https://yarnpkg.com/)** 是一个 **高效的 JavaScript 包管理工具**，最初由 Facebook 开发，用于替代 **NPM**，提供更快的依赖安装、更好的安全性和稳定性。它可以用于 **Node.js、React、Vue、Angular 等前端项目**，并且支持 **Monorepo** 管理多个子项目。
+
+#### NPM vs Yarn vs PNPM：
+
+| 特性     | NPM                 | Yarn        | PNPM               |
+| -------- | ------------------- | ----------- | ------------------ |
+| 速度     | 较慢                | 更快        | 最快               |
+| 依赖管理 | `package-lock.json` | `yarn.lock` | `pnpm-lock.yaml`   |
+| 磁盘占用 | 较大                | 较大        | 共享依赖，最省空间 |
+| 并行下载 | 否                  | 是          | 是                 |
+
 ## 版本控制
 
 版本控制（Version Control）是一种用于跟踪和管理文件变更的系统，主要用于软件开发和文档管理。它可以记录文件的历史版本，允许用户回溯到过去的版本，比较不同版本的差异，并支持多人协作开发，防止代码冲突和丢失。常见的版本控制系统包括 **Git、SVN（Subversion）和 Mercurial**，其中 **Git** 是目前最流行的分布式版本控制工具。
@@ -214,3 +282,11 @@ Gitee（码云） 与 GitHub 和 GitLab 最大的区别在于：
 ![](https://r2.code-snippet.online/md/tool/introduction/Docker.webp)
 
 **[Docker](https://www.docker.com/)** 是一个开源的 **容器化平台**，用于自动化应用的部署、扩展和管理。它通过容器技术将应用及其依赖环境打包在一起，确保应用在不同环境中（如开发、测试和生产环境）的一致性和可移植性。Docker 可以提高开发效率，简化应用部署，且比传统虚拟机占用更少的资源。开发者可以通过 Docker 容器快速构建、运行和发布应用，支持微服务架构和持续集成/持续部署（CI/CD）。
+
+## 其他
+
+### Typora
+
+![](https://r2.code-snippet.online/md/tool/introduction/Typora.png)
+
+**[Typora](https://typora.io/)** 是一款 **轻量级 Markdown 编辑器**，支持 **所见即所得（WYSIWYG）**，适用于 **笔记记录、文档编写、技术博客创作** 等。它的最大特点是 **即时渲染**，用户无需切换编辑和预览模式，所写即所得，提高写作效率。
