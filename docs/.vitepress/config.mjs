@@ -8,6 +8,12 @@ export default defineConfig({
       "这里是我分享技术心得、编程技巧和项目实践的空间。从前端到后端，从开发工具到最佳实践，我会用简洁的语言记录下学习与探索的过程。希望这些内容能为你带来启发，帮助你在技术道路上更加高效。一起成长，一起偷懒式高效工作！",
   themeConfig: {
 
+    // 本地搜索
+    // https://vitepress.dev/zh/reference/default-theme-search#local-search
+    search: {
+      provider: 'local'
+    },
+
     outline: {
       level: [2, 3], // 这里设置 h2 到 h3 级别的标题显示在大纲中
       label: '页面导航' // 自定义大纲标题
