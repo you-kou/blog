@@ -18,9 +18,9 @@ features:
   - title: 开发工具
     details: 工欲善其事，必先利其器！
     link: /tool/summary
-  - title: 技术标准
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 语言框架
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 最佳实践
+    details: 最佳实践是行业经验的结晶，通过实践验证的方案，帮助你避免常见的错误，提升工作效率。
+  - title: 编程框架
+    details: 框架通过提供一套规范、工具和自动化机制，帮助开发者提高开发效率、简化流程、增强代码质量，并促进代码的可维护性和扩展性。
 ---
 
