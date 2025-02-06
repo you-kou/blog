@@ -15,11 +15,12 @@ hero:
       link: /api-examples
 
 features:
-  - title: 工具
+  - title: 开发工具
     details: 工欲善其事，必先利其器！
-  - title: Feature B
+    link: /tool/summary
+  - title: 技术标准
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 语言框架
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
