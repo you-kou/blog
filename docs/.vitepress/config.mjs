@@ -99,6 +99,40 @@ export default defineConfig({
             }
           ]
         }
+      ],
+      '/framework/': [
+        {
+          text: '编程框架',
+          collapsed: true,
+          items: [
+            {
+              text: 'Spring Boot',
+              collapsed: true,
+              items: [
+                { text: '快速开始', link: '/framework/spring-boot/quick-start' }
+              ]
+            }
+
+          ]
+        }
+      ],
+      '/specification/': [
+        {
+          text: '最佳实践',
+          collapsed: true,
+          items: [
+            {
+              text: 'REST',
+              collapsed: true,
+              items: [
+                { text: '什么是 REST?', link: '/specification/rest/what-is-rest' },
+                { text: '六个约束条件', link: '/specification/rest/the-six-constraints' },
+                { text: 'REST 快速提示', link: '/specification/rest/rest-quick-tips' },
+                { text: 'HTTP 方法', link: '/specification/rest/http-methods' },
+              ]
+            }
+          ]
+        }
       ]
     },
 
