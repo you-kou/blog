@@ -38,7 +38,7 @@ head:
     <source src="https://r2.code-snippet.online/md/tool/introduction/Visual%20Studio%20Code%20lg.mp4" type="video/mp4">
 </video>
 
-[**Visual Studio Code**](https://code.visualstudio.com/)（简称 VS Code）是一款由微软开发的**免费**、开源、跨平台的**通用型**代码编辑器。它凭借其**轻量级**、高性能、丰富的功能和强大的扩展性，迅速成为全球开发者最喜爱的代码编辑器之一。
+[Visual Studio Code](https://code.visualstudio.com/)（简称 VS Code）是一款由微软开发的**免费**、开源、跨平台的**通用型**代码编辑器。它凭借其**轻量级**、高性能、丰富的功能和强大的扩展性，迅速成为全球开发者最喜爱的代码编辑器之一。
 
 ### IntelliJ IDEA
 

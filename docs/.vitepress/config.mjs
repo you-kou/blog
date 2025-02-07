@@ -11,7 +11,27 @@ export default defineConfig({
     // 本地搜索
     // https://vitepress.dev/zh/reference/default-theme-search#local-search
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+      }
     },
 
     outline: {
@@ -51,6 +71,28 @@ export default defineConfig({
                     { text: 'Maven 坐标', link: '/tool/maven/pom/essential/maven-coordinates' },
                     { text: '打包', link: '/tool/maven/pom/essential/packaging' },
                     { text: 'POM 关系', link: '/tool/maven/pom/essential/pom-relationships' },
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          text: 'NPM',
+          collapsed: true,
+          items: [
+            { text: '简介', link: '/tool/npm/introduction' },
+            { text: '安装', link: '/tool/npm/install' },
+            {
+              text: 'npm 命令行',
+              items: [
+                {
+                  text: 'CLI 命令',
+                  collapsed: true,
+                  items: [
+                    { text: 'npm init', link: '/tool/npm/npm-cli/cli-commands/npm-init' },
+                    { text: 'npm-install', link: '/tool/npm/npm-cli/cli-commands/npm-install' },
+                    { text: 'npm-run-script', link: '/tool/npm/npm-cli/cli-commands/npm-run-script' },
                   ]
                 }
               ]
