@@ -103,37 +103,37 @@ export default defineConfig({
       '/framework/': [
         {
           text: '编程框架',
+          items: [
+            { text: '框架一览', link: '/framework/summary' }
+          ]
+        },
+        {
+          text: 'Spring Boot',
           collapsed: true,
           items: [
-            {
-              text: 'Spring Boot',
-              collapsed: true,
-              items: [
-                { text: '快速开始', link: '/framework/spring-boot/quick-start' }
-              ]
-            }
-
+            { text: '快速开始', link: '/framework/spring-boot/quick-start' },
+            { text: '构建 RESTful Web 服务', link: '/framework/spring-boot/building-a-restful-web-service' },
           ]
         }
       ],
       '/specification/': [
         {
           text: '最佳实践',
+          items: [
+            { text: '规范一览', link: '/framework/summary' }
+          ]
+        },
+        {
+          text: 'REST',
           collapsed: true,
           items: [
-            {
-              text: 'REST',
-              collapsed: true,
-              items: [
-                { text: '什么是 REST?', link: '/specification/rest/what-is-rest' },
-                { text: '六个约束条件', link: '/specification/rest/the-six-constraints' },
-                { text: 'REST 快速提示', link: '/specification/rest/rest-quick-tips' },
-                { text: 'HTTP 方法', link: '/specification/rest/http-methods' },
-                { text: '资源命名', link: '/specification/rest/resource-naming' },
-                { text: '幂等性', link: '/specification/rest/idempotence' },
-                { text: '安全性', link: '/specification/rest/safety' },
-              ]
-            }
+            { text: '什么是 REST?', link: '/specification/rest/what-is-rest' },
+            { text: '六个约束条件', link: '/specification/rest/the-six-constraints' },
+            { text: 'REST 快速提示', link: '/specification/rest/rest-quick-tips' },
+            { text: 'HTTP 方法', link: '/specification/rest/http-methods' },
+            { text: '资源命名', link: '/specification/rest/resource-naming' },
+            { text: '幂等性', link: '/specification/rest/idempotence' },
+            { text: '安全性', link: '/specification/rest/safety' },
           ]
         }
       ]
