@@ -129,6 +129,9 @@ export default defineConfig({
                 { text: '六个约束条件', link: '/specification/rest/the-six-constraints' },
                 { text: 'REST 快速提示', link: '/specification/rest/rest-quick-tips' },
                 { text: 'HTTP 方法', link: '/specification/rest/http-methods' },
+                { text: '资源命名', link: '/specification/rest/resource-naming' },
+                { text: '幂等性', link: '/specification/rest/idempotence' },
+                { text: '安全性', link: '/specification/rest/safety' },
               ]
             }
           ]
