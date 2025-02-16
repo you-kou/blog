@@ -50,7 +50,15 @@ export default defineConfig({
         {
           text: '开发工具',
           items: [
-            { text: '必备工具汇总', link: '/tool/summary' }
+            { text: '必备工具汇总', link: '/tool/summary' },
+            { text: 'JDK', link: '/tool/jdk' }
+          ]
+        },
+        {
+          text: 'IDEA',
+          collapsed: true,
+          items: [
+            { text: '设置', link: '/tool/idea/settings' },
           ]
         },
         {
@@ -73,6 +81,14 @@ export default defineConfig({
                     { text: 'POM 关系', link: '/tool/maven/pom/essential/pom-relationships' },
                   ]
                 }
+              ]
+            },
+            {
+              text: '配置',
+              collapsed: true,
+              items: [
+                { text: '默认 settings.xml 文件', link: '/tool/maven/settings/default' },
+                { text: '仓库镜像', link: '/tool/maven/settings/mirror-settings' },
               ]
             }
           ]
@@ -108,19 +124,35 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Spring Boot',
+          text: 'Spring',
           collapsed: true,
           items: [
-            { text: '快速开始', link: '/framework/spring-boot/quick-start' },
-            { text: '构建 RESTful Web 服务', link: '/framework/spring-boot/building-a-restful-web-service' },
+            { text: 'Spring 项目生态', link: '/framework/spring/projects' },
+            {
+              text: 'Spring Boot',
+              collapsed: true,
+              items: [
+                { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
+                { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
+                { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
+              ]
+            }
           ]
-        }
+        },
       ],
       '/specification/': [
         {
           text: '最佳实践',
           items: [
             { text: '规范一览', link: '/framework/summary' }
+          ]
+        },
+        {
+          text: '文件格式',
+          collapsed: true,
+          items: [
+            { text: '.properties 文件格式', link: '/specification/file/properties' },
+            { text: '.yaml', link: '/specification/file/yaml' }
           ]
         },
         {
