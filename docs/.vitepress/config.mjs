@@ -159,7 +159,8 @@ export default defineConfig({
           text: '系统架构',
           collapsed: true,
           items: [
-            { text: '前后端分离架构', link: '/specification/architecture/frontend-backend-separation' }
+            { text: '前后端分离架构', link: '/specification/architecture/frontend-backend-separation' },
+            { text: 'MVVM 框架', link: '/specification/architecture/mvvm' },
           ]
         },
         {
