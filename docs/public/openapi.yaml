@@ -1,0 +1,77 @@
+openapi: 3.0.0
+info:
+  title: 用户 API
+  description: 一个简单的用户管理 API 示例
+  version: 1.0.0
+
+servers:
+  - url: https://api.example.com/v1
+    description: 生产环境服务器
+
+paths:
+  /users:
+    get:
+      summary: 获取所有用户
+      description: 返回用户列表
+      responses:
+        '200':
+          description: 成功获取用户列表
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+    post:
+      summary: 创建新用户
+      description: 添加一个新的用户
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: 用户创建成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+  /users/{userId}:
+    get:
+      summary: 获取指定用户信息
+      description: 通过用户 ID 获取单个用户
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          description: 用户 ID
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: 成功返回用户信息
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: 用户未找到
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: 张三
+        email:
+          type: string
+          example: zhangsan@example.com

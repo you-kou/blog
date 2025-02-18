@@ -135,6 +135,15 @@ export default defineConfig({
                 { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
                 { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
                 { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
+                { text: 'Web 响应设计', link: '/framework/spring/spring-boot/response' },
+              ]
+            },
+            {
+              text: 'API',
+              collapsed: true,
+              items: [
+                { text: 'HttpStatus', link: '/framework/spring/api/HttpStatus' },
+                { text: 'ResponseEntity', link: '/framework/spring/api/ResponseEntity' },
               ]
             }
           ]

@@ -11,8 +11,8 @@ hero:
       text: Markdown Examples
       link: /markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Public API
+      link: /api
 
 features:
   - title: 开发工具
