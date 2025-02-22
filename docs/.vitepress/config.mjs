@@ -198,6 +198,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '新鲜的蔬菜', link: '/lanqiao/web/新鲜的蔬菜' },
+            { text: '真人鉴定器', link: '/lanqiao/web/真人鉴定器' },
           ]
         }
       ]
