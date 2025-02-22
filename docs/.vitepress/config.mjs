@@ -185,6 +185,21 @@ export default defineConfig({
             { text: '安全性', link: '/specification/rest/safety' },
           ]
         }
+      ],
+      '/lanqiao/': [
+        {
+          text: '蓝桥杯概述',
+          items: [
+            { text: '蓝桥杯概述', link: '/lanqiao/summary' }
+          ]
+        },
+        {
+          text: 'Web 应用开发',
+          collapsed: true,
+          items: [
+            { text: '新鲜的蔬菜', link: '/lanqiao/web/新鲜的蔬菜' },
+          ]
+        }
       ]
     },
 
