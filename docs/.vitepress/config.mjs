@@ -135,7 +135,8 @@ export default defineConfig({
                 { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
                 { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
                 { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
-                { text: 'Web 响应设计', link: '/framework/spring/spring-boot/response' },
+                { text: '获取 HTTP 请求参数', link: '/framework/spring/spring-boot/get-request-parameters' },
+                { text: 'Web 响应设计', link: '/framework/spring/spring-boot/http-response' },
               ]
             },
             {
@@ -199,6 +200,8 @@ export default defineConfig({
           items: [
             { text: '新鲜的蔬菜', link: '/lanqiao/web/新鲜的蔬菜' },
             { text: '真人鉴定器', link: '/lanqiao/web/真人鉴定器' },
+            { text: '俄罗斯方块', link: '/lanqiao/web/俄罗斯方块' },
+            { text: '水果拼盘', link: '/lanqiao/web/水果拼盘' },
           ]
         }
       ]
