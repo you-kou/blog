@@ -1,6 +1,6 @@
-# `.properties` 文件格式
+# `properties` 数据格式
 
-`.properties` 文件是一种基于键值对（key-value）的配置文件格式，通常用于 Java 应用程序（如 Spring Boot）进行配置。
+`properties` 文件通常用于存储配置数据。它以键值对（key-value）形式存储信息，每个键（Key）都对应一个值（Value）。这种格式非常简洁且易于解析，常见于 Java 应用程序、Web 服务配置和其他应用程序的设置文件中。
 
 ## 基本格式
 

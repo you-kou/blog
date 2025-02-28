@@ -129,6 +129,24 @@ export default defineConfig({
           items: [
             { text: 'Spring 项目生态', link: '/framework/spring/projects' },
             {
+              text: 'Spring Framework',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Spring Web MVC',
+                  items: [
+                    {
+                      text: '带注解的控制器',
+                      items: [
+                        { text: '声明', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/declaration' },
+                        { text: '映射请求', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/mapping-requests' },
+                      ]
+                    },
+                  ]
+                },
+              ]
+            },
+            {
               text: 'Spring Boot',
               collapsed: true,
               items: [
@@ -158,11 +176,14 @@ export default defineConfig({
           ]
         },
         {
-          text: '文件格式',
+          text: '数据格式',
           collapsed: true,
           items: [
-            { text: '.properties 文件格式', link: '/specification/file/properties' },
-            { text: '.yaml', link: '/specification/file/yaml' }
+            { text: 'csv', link: '/specification/data-format/csv' },
+            { text: 'json', link: '/specification/data-format/json' },
+            { text: 'xml', link: '/specification/data-format/xml' },
+            { text: 'properties', link: '/specification/data-format/properties' },
+            { text: 'yaml', link: '/specification/data-format/yaml' },
           ]
         },
         {
@@ -185,7 +206,15 @@ export default defineConfig({
             { text: '幂等性', link: '/specification/rest/idempotence' },
             { text: '安全性', link: '/specification/rest/safety' },
           ]
-        }
+        },
+        {
+          text: 'RFC',
+          collapsed: true,
+          items: [
+            { text: 'RFC 简介', link: '/specification/rfc/rfc' },
+            { text: 'URI 模板', link: '/specification/rfc/uri-template' },
+          ]
+        },
       ],
       '/lanqiao/': [
         {
@@ -202,6 +231,7 @@ export default defineConfig({
             { text: '真人鉴定器', link: '/lanqiao/web/真人鉴定器' },
             { text: '俄罗斯方块', link: '/lanqiao/web/俄罗斯方块' },
             { text: '水果拼盘', link: '/lanqiao/web/水果拼盘' },
+            { text: '电影院排座位', link: '/lanqiao/web/电影院排座位' },
           ]
         }
       ]

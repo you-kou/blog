@@ -1,4 +1,4 @@
-# YAML 文件格式
+# YAML 数据格式
 
 YAML（Yet Another Markup Language）是一种简洁易读的配置文件格式，常用于 Spring Boot、Kubernetes、Docker 等项目的配置管理。
 
