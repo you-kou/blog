@@ -125,13 +125,57 @@ export default defineConfig({
         },
         {
           text: 'Spring',
-          collapsed: true,
+          link: '/framework/spring/why-spring',
           items: [
-            { text: 'Spring 项目生态', link: '/framework/spring/projects' },
+            {
+              text: 'Spring Boot',
+              collapsed: true,
+              items: [
+                { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
+                { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
+                { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
+                { text: '获取 HTTP 请求参数', link: '/framework/spring/spring-boot/get-request-parameters' },
+                { text: 'Web 响应设计', link: '/framework/spring/spring-boot/http-response' },
+              ]
+            },
             {
               text: 'Spring Framework',
               collapsed: true,
               items: [
+                {
+                  text: '核心技术',
+                  items: [
+                    { text: 'Spring IoC 容器和 Bean 简介', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/introduction-to-the-spring-ioc-container-and-beans' },
+                    {
+                      text: 'IoC 容器',
+                      items: [
+                        {
+                          text: '依赖',
+                          items: [
+                            { text: '依赖注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/dependencies/dependency-injection' }
+                          ]
+                        },
+                        {
+                          text: '基于注解的容器配置',
+                          link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration',
+                          items: [
+                            { text: '使用 @Autowired', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@autowired' },
+                            { text: '使用 @Resource` 注解进行注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/injection-with-@resource' },
+                            { text: '使用 @Value', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@value' },
+                          ]
+                        },
+                      ]
+                    },
+                    {
+                      text: 'Spring 表达式语言',
+                      link: '/framework/spring/spring-framework/core-technologies/spring-expression-language',
+                      items: [
+                        { text: '求值', link: '/framework/spring/spring-framework/core-technologies/spring-expression-language/evaluation' },
+                        { text: 'Bean 定义中的表达式', link: '/framework/spring/spring-framework/core-technologies/spring-expression-language/expressions-in-bean-definitions' },
+                      ]
+                    },
+                  ]
+                },
                 {
                   text: 'Spring Web MVC',
                   items: [
@@ -142,19 +186,32 @@ export default defineConfig({
                         { text: '映射请求', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/mapping-requests' },
                       ]
                     },
+                    {
+                      text: 'MVC 配置',
+                      items: [
+                        { text: '启用 MVC 配置', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/enable-mvc-configuration' },
+                        { text: 'MVC 配置 API', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/mvc-config-api' },
+                        { text: '消息转换器', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/message-converters' },
+                        { text: '静态资源', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/static-resources' },
+                      ]
+                    },
                   ]
                 },
               ]
             },
             {
-              text: 'Spring Boot',
-              collapsed: true,
+              text: 'Spring Data',
               items: [
-                { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
-                { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
-                { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
-                { text: '获取 HTTP 请求参数', link: '/framework/spring/spring-boot/get-request-parameters' },
-                { text: 'Web 响应设计', link: '/framework/spring/spring-boot/http-response' },
+                {
+                  text: 'Spring Data JPA',
+                  link: '/framework/spring/spring-data/spring-data-jpa',
+                  items: [
+                    { text: '启用 MVC 配置', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/enable-mvc-configuration' },
+                    { text: 'MVC 配置 API', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/mvc-config-api' },
+                    { text: '消息转换器', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/message-converters' },
+                    { text: '静态资源', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/static-resources' },
+                  ]
+                },
               ]
             },
             {
