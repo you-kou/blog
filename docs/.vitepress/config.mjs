@@ -68,19 +68,38 @@ export default defineConfig({
             { text: '简介', link: '/tool/maven/introduction' },
             { text: '快速开始', link: '/tool/maven/quick-start' },
             {
-              text: 'POM',
-              collapsed: true,
+              text: '依赖机制',
+              link: '/tool/maven/dependency-mechanism',
               items: [
-                { text: '简介', link: '/tool/maven/pom/introduction' },
+                { text: '传递依赖', link: '/tool/maven/dependency-mechanism/transitive-dependencies' },
+                { text: '依赖范围', link: '/tool/maven/dependency-mechanism/dependency-scope' },
+                { text: '依赖管理', link: '/tool/maven/dependency-mechanism/dependency-management' },
+              ]
+            },
+            {
+              text: 'POM 参考',
+              items: [
                 {
-                  text: '基础',
-                  collapsed: true,
+                  text: '基础知识',
+                  link: '/tool/maven/pom-reference/the-basics',
                   items: [
-                    { text: 'Maven 坐标', link: '/tool/maven/pom/essential/maven-coordinates' },
+                    { text: 'Maven 坐标', link: '/tool/maven/pom-reference/the-basics/maven-coordinates' },
                     { text: '打包', link: '/tool/maven/pom/essential/packaging' },
-                    { text: 'POM 关系', link: '/tool/maven/pom/essential/pom-relationships' },
+                    {
+                      text: 'POM 关系',
+                      link: '/tool/maven/pom-reference/the-basics/pom-relationships',
+                      items: [
+                        {
+                          text: '依赖',
+                          link: '/tool/maven/pom-reference/the-basics/pom-relationships/dependencies',
+                          items: [
+                            { text: '依赖管理', link: '/tool/maven/pom-reference/the-basics/pom-relationships/dependencies/dependency-management' },
+                          ]
+                        },
+                      ]
+                    }
                   ]
-                }
+                },
               ]
             },
             {
@@ -129,8 +148,19 @@ export default defineConfig({
           items: [
             {
               text: 'Spring Boot',
-              collapsed: true,
               items: [
+                {
+                  text: '参考',
+                  items: [
+                    {
+                      text: '核心功能',
+                      items: [
+                        { text: 'SpringApplication', link: '/framework/spring/spring-boot/reference/core-features/spring-application' },
+                        { text: '日志记录', link: '/framework/spring/spring-boot/reference/core-features/logging' },
+                      ]
+                    }
+                  ]
+                },
                 { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
                 { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
                 { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
@@ -162,6 +192,7 @@ export default defineConfig({
                             { text: '使用 @Autowired', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@autowired' },
                             { text: '使用 @Resource` 注解进行注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/injection-with-@resource' },
                             { text: '使用 @Value', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@value' },
+                            { text: '使用 @PostConstruct 和 @PreDestroy', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@postconstruct-and-@predestroy' },
                           ]
                         },
                       ]
@@ -203,13 +234,21 @@ export default defineConfig({
               text: 'Spring Data',
               items: [
                 {
+                  text: 'Spring Data Commons',
+                  link: '/framework/spring/spring-data/spring-data-jpa',
+                  items: [
+                    { text: '概述', link: '/framework/spring/spring-data/spring-data-commons/overview' },
+                    { text: '依赖关系', link: '/framework/spring/spring-data/spring-data-commons/dependencies' },
+                  ]
+                },
+                {
                   text: 'Spring Data JPA',
                   link: '/framework/spring/spring-data/spring-data-jpa',
                   items: [
-                    { text: '启用 MVC 配置', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/enable-mvc-configuration' },
-                    { text: 'MVC 配置 API', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/mvc-config-api' },
-                    { text: '消息转换器', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/message-converters' },
-                    { text: '静态资源', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/static-resources' },
+                    { text: '开始使用', link: '/framework/spring/spring-data/spring-data-jpa/getting-started' },
+                    { text: '核心概念', link: '/framework/spring/spring-data/spring-data-jpa/core-concepts' },
+                    { text: '定义存储库接口', link: '/framework/spring/spring-data/spring-data-jpa/defining-repository-interfaces' },
+                    { text: '配置', link: '/framework/spring/spring-data/spring-data-jpa/configuration' },
                   ]
                 },
               ]
