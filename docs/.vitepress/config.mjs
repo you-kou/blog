@@ -239,6 +239,23 @@ export default defineConfig({
                   items: [
                     { text: '概述', link: '/framework/spring/spring-data/spring-data-commons/overview' },
                     { text: '依赖关系', link: '/framework/spring/spring-data/spring-data-commons/dependencies' },
+                    { text: '对象映射基础', link: '/framework/spring/spring-data/spring-data-commons/object-mapping-fundamentals' },
+                    {
+                      text: '使用 Spring Data 仓库',
+                      items: [
+                        { text: '核心概念', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/core-concepts' },
+                        { text: '查询方法', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/query-methods' },
+                        { text: '定义存储库接口', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/defining-repository-interfaces' },
+                        { text: '定义查询方法', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/defining-query-methods' },
+                      ]
+                    },
+                    {
+                      text: '附录',
+                      items: [
+                        { text: '仓库查询关键字', link: '/framework/spring/spring-data/spring-data-commons/appendices/repository-query-keywords' },
+                        { text: 'Repository查询返回类型', link: '/framework/spring/spring-data/spring-data-commons/appendices/repository-query-return-types' },
+                      ]
+                    },
                   ]
                 },
                 {
@@ -288,6 +305,7 @@ export default defineConfig({
           items: [
             { text: '前后端分离架构', link: '/specification/architecture/frontend-backend-separation' },
             { text: 'MVVM 框架', link: '/specification/architecture/mvvm' },
+            { text: '领域驱动设计（DDD）', link: '/specification/architecture/ddd' },
           ]
         },
         {
