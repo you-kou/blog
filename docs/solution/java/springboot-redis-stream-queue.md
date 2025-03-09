@@ -650,7 +650,7 @@ public class RedisStreamListener implements StreamListener<String, MapRecord<Str
 - **日志记录**：
   - 使用 `Logger` 记录消息接收、处理成功、处理失败和重试日志，便于调试和监控。
 
-### RedisTemplate
+### 配置`RedisTemplate`
 
 实现 `RedisConfig` 配置类，用于配置 `RedisTemplate`。通过自定义序列化器，确保 Key 和 Value 的序列化方式符合业务需求，并支持复杂对象的 JSON 序列化和反序列化。
 
