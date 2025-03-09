@@ -195,6 +195,14 @@ export default defineConfig({
                             { text: '使用 @PostConstruct 和 @PreDestroy', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@postconstruct-and-@predestroy' },
                           ]
                         },
+                        {
+                          text: '基于 Java 的容器配置',
+                          link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration',
+                          items: [
+                            { text: '基本概念：@Bean 和 @Configuration', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/basic-concepts-@bean-and-@configuration' },
+                            { text: '使用 AnnotationConfigApplicationContext 实例化 Spring 容器', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/instantiating-the-spring-container-by-using-annotationconfigapplicationcontext' },
+                          ]
+                        },
                       ]
                     },
                     {
