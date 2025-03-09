@@ -330,22 +330,17 @@ export default defineConfig({
           ]
         },
       ],
-      '/lanqiao/': [
+      '/solution/': [
         {
-          text: '蓝桥杯概述',
-          items: [
-            { text: '蓝桥杯概述', link: '/lanqiao/summary' }
-          ]
-        },
-        {
-          text: 'Web 应用开发',
+          text: '解决方案',
           collapsed: true,
           items: [
-            { text: '新鲜的蔬菜', link: '/lanqiao/web/新鲜的蔬菜' },
-            { text: '真人鉴定器', link: '/lanqiao/web/真人鉴定器' },
-            { text: '俄罗斯方块', link: '/lanqiao/web/俄罗斯方块' },
-            { text: '水果拼盘', link: '/lanqiao/web/水果拼盘' },
-            { text: '电影院排座位', link: '/lanqiao/web/电影院排座位' },
+            {
+              text: 'Java',
+              items: [
+                { text: '基于 Redis Stream 的订单异步处理框架搭建', link: '/solution/java/springboot-redis-stream-queue' },
+              ]
+            }
           ]
         }
       ]
