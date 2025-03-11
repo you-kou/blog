@@ -136,7 +136,7 @@ export default defineConfig({
         }
       ],
       '/framework/': [
-        { text: '编程框架', link: '/framework' },
+        { text: '编程框架', link: '/framework/framework' },
         {
           text: 'Spring',
           link: '/framework/spring/why-spring',
