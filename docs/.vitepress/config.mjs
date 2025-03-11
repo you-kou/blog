@@ -148,6 +148,7 @@ export default defineConfig({
           items: [
             {
               text: 'Spring Boot',
+              collapsed: true,
               items: [
                 {
                   text: '参考',
@@ -243,9 +244,11 @@ export default defineConfig({
             },
             {
               text: 'Spring Data',
+              collapsed: true,
               items: [
                 {
                   text: 'Spring Data Commons',
+                  collapsed: true,
                   link: '/framework/spring/spring-data/spring-data-jpa',
                   items: [
                     { text: '概述', link: '/framework/spring/spring-data/spring-data-commons/overview' },
@@ -272,6 +275,7 @@ export default defineConfig({
                 },
                 {
                   text: 'Spring Data JPA',
+                  collapsed: true,
                   link: '/framework/spring/spring-data/spring-data-jpa',
                   items: [
                     { text: '开始使用', link: '/framework/spring/spring-data/spring-data-jpa/getting-started' },
