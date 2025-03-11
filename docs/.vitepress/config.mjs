@@ -182,9 +182,10 @@ export default defineConfig({
                         {
                           text: '依赖',
                           items: [
-                            { text: '依赖注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/dependencies/dependency-injection' }
+                            { text: '依赖注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/dependencies/dependency-injection' },
                           ]
                         },
+                        { text: 'Bean 范围', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/bean-scopes' },
                         {
                           text: '基于注解的容器配置',
                           link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration',
@@ -201,6 +202,8 @@ export default defineConfig({
                           items: [
                             { text: '基本概念：@Bean 和 @Configuration', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/basic-concepts-@bean-and-@configuration' },
                             { text: '使用 AnnotationConfigApplicationContext 实例化 Spring 容器', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/instantiating-the-spring-container-by-using-annotationconfigapplicationcontext' },
+                            { text: '使用 @Bean 注解', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/using-the-@bean-annotation' },
+                            { text: '使用 @Configuration 注解', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/using-the-@configuration-annotation' },
                           ]
                         },
                       ]
@@ -255,6 +258,7 @@ export default defineConfig({
                         { text: '查询方法', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/query-methods' },
                         { text: '定义存储库接口', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/defining-repository-interfaces' },
                         { text: '定义查询方法', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/defining-query-methods' },
+                        { text: '创建仓库实例', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/creating-repository-instances' },
                       ]
                     },
                     {
