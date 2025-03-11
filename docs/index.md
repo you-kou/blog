@@ -23,6 +23,6 @@ features:
     link: /specification/summary
   - title: 编程框架
     details: 框架通过提供一套规范、工具和自动化机制，帮助开发者提高开发效率、简化流程、增强代码质量，并促进代码的可维护性和扩展性。
-    link: /framework/summary
+    link: /framework/framework
 ---
 
