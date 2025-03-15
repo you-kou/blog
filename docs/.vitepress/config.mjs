@@ -339,6 +339,13 @@ export default defineConfig({
             { text: '设计模式概述', link: '/specification/design-patterns/overview-of-design-patterns' },
             { text: 'UML图', link: '/specification/design-patterns/uml-diagram' },
             { text: '软件设计原则', link: '/specification/design-patterns/software-design-principles' },
+            {
+              text: '创建者模式',
+              link: '/specification/design-patterns/builder-pattern',
+              items: [
+                { text: '单例设计模式', link: '/specification/design-patterns/builder-pattern/singleton' },
+              ]
+            }
           ]
         },
         {
