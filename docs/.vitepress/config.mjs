@@ -341,9 +341,14 @@ export default defineConfig({
             { text: '软件设计原则', link: '/specification/design-patterns/software-design-principles' },
             {
               text: '创建者模式',
-              link: '/specification/design-patterns/builder-pattern',
+              link: '/specification/design-patterns/creational-pattern',
               items: [
-                { text: '单例设计模式', link: '/specification/design-patterns/builder-pattern/singleton' },
+                { text: '单例设计模式', link: '/specification/design-patterns/creational-patterns/singleton' },
+                { text: '工厂模式', link: '/specification/design-patterns/creational-patterns/factory' },
+                { text: '抽象工厂模式', link: '/specification/design-patterns/creational-patterns/abstract-factory' },
+                { text: '原型模式', link: '/specification/design-patterns/creational-patterns/prototype' },
+                { text: '建造者模式', link: '/specification/design-patterns/creational-patterns/builder' },
+                { text: '创建者模式对比', link: '/specification/design-patterns/creational-patterns/comparison-of-creational-patterns' },
               ]
             }
           ]
