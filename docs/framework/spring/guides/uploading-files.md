@@ -6,23 +6,21 @@
 
 您将创建一个 Spring Boot Web 应用程序来接受文件上传，并构建一个简单的 HTML 界面用于上传测试文件。
 
-## 使用 IDEA 创建项目
+## [创建项目](https://code-snippet.online/framework/spring/spring-boot/quick-start.html)
 
-- Group：com.example
+### starter 依赖
 
-- Artifact：UploadingFiles
+- Spring Web
 
-- Dependencies：Spring Web、Thymeleaf
+- Thymeleaf
+
+## 创建文件上传控制器
 
 要在 Servlet 容器中上传文件，需要注册一个 `MultipartConfigElement` 类（在 `web.xml` 中对应 `<multipart-config>`）。不过，多亏了 Spring Boot，一切都会自动配置！
 
 作为 Spring MVC 自动配置的一部分，Spring Boot 将创建一个 `MultipartConfigElement` Bean，并自动配置文件上传功能。
 
-## 创建文件上传控制器
-
-初始应用程序已经包含了一些用于在磁盘上存储和加载上传文件的类。它们都位于 `com.example.uploadingfiles.storage` 包中。您将在新的 `FileUploadController` 中使用这些类。
-
-以下代码（位于 `src/main/java/com/example/uploadingfiles/FileUploadController.java`）展示了文件上传控制器：
+创建文件上传控制器`FileUploadController`，如下所示（文件位置： `src/main/java/com/example/uploadingfiles/FileUploadController.java`）：
 
 ```java
 package com.example.uploadingfiles;

@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 
+import framework from "./sidebar/framework.js";
+import language from "./sidebar/language.js";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CodeSnippet",
@@ -133,165 +136,27 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/framework/': [
-        { text: '编程框架', link: '/framework/framework' },
+        },
         {
-          text: 'Spring',
-          link: '/framework/spring/why-spring',
+          text: 'Postman',
+          collapsed: true,
           items: [
             {
-              text: 'Spring Boot',
-              collapsed: true,
+              text: '入门指南',
               items: [
                 {
-                  text: '参考',
+                  text: '第一步',
                   items: [
-                    {
-                      text: '核心功能',
-                      items: [
-                        { text: 'SpringApplication', link: '/framework/spring/spring-boot/reference/core-features/spring-application' },
-                        { text: '日志记录', link: '/framework/spring/spring-boot/reference/core-features/logging' },
-                      ]
-                    }
+                    { text: '发送第一个请求', link: '/tool/postman/getting-started/first-steps/sending-the-first-request' },
                   ]
-                },
-                { text: '系统要求', link: '/framework/spring/spring-boot/system-requirements' },
-                { text: '快速开始', link: '/framework/spring/spring-boot/quick-start' },
-                { text: '构建 RESTful Web 服务', link: '/framework/spring/spring-boot/building-a-restful-web-service' },
-                { text: '获取 HTTP 请求参数', link: '/framework/spring/spring-boot/get-request-parameters' },
-                { text: 'Web 响应设计', link: '/framework/spring/spring-boot/http-response' },
-              ]
-            },
-            {
-              text: 'Spring Framework',
-              collapsed: true,
-              items: [
-                {
-                  text: '核心技术',
-                  items: [
-                    { text: 'Spring IoC 容器和 Bean 简介', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/introduction-to-the-spring-ioc-container-and-beans' },
-                    {
-                      text: 'IoC 容器',
-                      items: [
-                        {
-                          text: '依赖',
-                          items: [
-                            { text: '依赖注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/dependencies/dependency-injection' },
-                          ]
-                        },
-                        { text: 'Bean 范围', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/bean-scopes' },
-                        {
-                          text: '基于注解的容器配置',
-                          link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration',
-                          items: [
-                            { text: '使用 @Autowired', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@autowired' },
-                            { text: '使用 @Resource` 注解进行注入', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/injection-with-@resource' },
-                            { text: '使用 @Value', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@value' },
-                            { text: '使用 @PostConstruct 和 @PreDestroy', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/annotation-based-container-configuration/using-@postconstruct-and-@predestroy' },
-                          ]
-                        },
-                        {
-                          text: '基于 Java 的容器配置',
-                          link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration',
-                          items: [
-                            { text: '基本概念：@Bean 和 @Configuration', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/basic-concepts-@bean-and-@configuration' },
-                            { text: '使用 AnnotationConfigApplicationContext 实例化 Spring 容器', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/instantiating-the-spring-container-by-using-annotationconfigapplicationcontext' },
-                            { text: '使用 @Bean 注解', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/using-the-@bean-annotation' },
-                            { text: '使用 @Configuration 注解', link: '/framework/spring/spring-framework/core-technologies/the-ioc-container/java-based-container-configuration/using-the-@configuration-annotation' },
-                          ]
-                        },
-                      ]
-                    },
-                    {
-                      text: 'Spring 表达式语言',
-                      link: '/framework/spring/spring-framework/core-technologies/spring-expression-language',
-                      items: [
-                        { text: '求值', link: '/framework/spring/spring-framework/core-technologies/spring-expression-language/evaluation' },
-                        { text: 'Bean 定义中的表达式', link: '/framework/spring/spring-framework/core-technologies/spring-expression-language/expressions-in-bean-definitions' },
-                      ]
-                    },
-                  ]
-                },
-                {
-                  text: 'Spring Web MVC',
-                  items: [
-                    {
-                      text: '带注解的控制器',
-                      items: [
-                        { text: '声明', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/declaration' },
-                        { text: '映射请求', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/mapping-requests' },
-                      ]
-                    },
-                    {
-                      text: 'MVC 配置',
-                      items: [
-                        { text: '启用 MVC 配置', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/enable-mvc-configuration' },
-                        { text: 'MVC 配置 API', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/mvc-config-api' },
-                        { text: '消息转换器', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/message-converters' },
-                        { text: '静态资源', link: '/framework/spring/spring-framework/spring-web-mvc/mvc-config/static-resources' },
-                      ]
-                    },
-                  ]
-                },
-              ]
-            },
-            {
-              text: 'Spring Data',
-              collapsed: true,
-              items: [
-                {
-                  text: 'Spring Data Commons',
-                  collapsed: true,
-                  link: '/framework/spring/spring-data/spring-data-jpa',
-                  items: [
-                    { text: '概述', link: '/framework/spring/spring-data/spring-data-commons/overview' },
-                    { text: '依赖关系', link: '/framework/spring/spring-data/spring-data-commons/dependencies' },
-                    { text: '对象映射基础', link: '/framework/spring/spring-data/spring-data-commons/object-mapping-fundamentals' },
-                    {
-                      text: '使用 Spring Data 仓库',
-                      items: [
-                        { text: '核心概念', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/core-concepts' },
-                        { text: '查询方法', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/query-methods' },
-                        { text: '定义存储库接口', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/defining-repository-interfaces' },
-                        { text: '定义查询方法', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/defining-query-methods' },
-                        { text: '创建仓库实例', link: '/framework/spring/spring-data/spring-data-commons/working-with-spring-data-repositories/creating-repository-instances' },
-                      ]
-                    },
-                    {
-                      text: '附录',
-                      items: [
-                        { text: '仓库查询关键字', link: '/framework/spring/spring-data/spring-data-commons/appendices/repository-query-keywords' },
-                        { text: 'Repository查询返回类型', link: '/framework/spring/spring-data/spring-data-commons/appendices/repository-query-return-types' },
-                      ]
-                    },
-                  ]
-                },
-                {
-                  text: 'Spring Data JPA',
-                  collapsed: true,
-                  link: '/framework/spring/spring-data/spring-data-jpa',
-                  items: [
-                    { text: '开始使用', link: '/framework/spring/spring-data/spring-data-jpa/getting-started' },
-                    { text: '核心概念', link: '/framework/spring/spring-data/spring-data-jpa/core-concepts' },
-                    { text: '定义存储库接口', link: '/framework/spring/spring-data/spring-data-jpa/defining-repository-interfaces' },
-                    { text: '配置', link: '/framework/spring/spring-data/spring-data-jpa/configuration' },
-                  ]
-                },
-              ]
-            },
-            {
-              text: 'API',
-              collapsed: true,
-              items: [
-                { text: 'HttpStatus', link: '/framework/spring/api/HttpStatus' },
-                { text: 'ResponseEntity', link: '/framework/spring/api/ResponseEntity' },
+                }
               ]
             }
           ]
-        },
+        }
       ],
+      '/framework/': framework,
+      '/language/': language,
       '/specification/': [
         {
           text: '最佳实践',
@@ -304,10 +169,10 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'csv', link: '/specification/data-format/csv' },
-            { text: 'json', link: '/specification/data-format/json' },
-            { text: 'xml', link: '/specification/data-format/xml' },
-            { text: 'properties', link: '/specification/data-format/properties' },
-            { text: 'yaml', link: '/specification/data-format/yaml' },
+            { text: 'JSON', link: '/specification/data-format/json' },
+            { text: 'XML', link: '/specification/data-format/xml' },
+            { text: 'Properties', link: '/specification/data-format/properties' },
+            { text: 'YAML', link: '/specification/data-format/yaml' },
           ]
         },
         {

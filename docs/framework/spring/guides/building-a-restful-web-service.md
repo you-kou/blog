@@ -24,11 +24,11 @@ http://localhost:8080/greeting?name=User
 {"id":1,"content":"Hello, User!"}
 ```
 
-## 使用 IDEA 创建项目
+## [创建项目](https://code-snippet.online/framework/spring/spring-boot/quick-start.html)
 
-- Group：com.example
+### starter 依赖
 
-- Artifact：restservice
+- Spring Web
 
 ## 创建资源表示类
 
