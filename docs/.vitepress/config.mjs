@@ -148,6 +148,7 @@ export default defineConfig({
                   text: '第一步',
                   items: [
                     { text: '发送第一个请求', link: '/tool/postman/getting-started/first-steps/sending-the-first-request' },
+                    { text: '创建你的第一个集合', link: '/tool/postman/getting-started/first-steps/creating-the-first-collection' },
                   ]
                 }
               ]
