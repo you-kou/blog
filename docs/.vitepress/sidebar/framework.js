@@ -99,6 +99,15 @@ export default [
                 items: [
                   { text: '声明', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/declaration' },
                   { text: '映射请求', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/mapping-requests' },
+                  {
+                    text: '处理方法',
+                    items: [
+                      { text: '@RequestParam', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/handler-methods/@RequestParam' },
+                      { text: '@RequestBody', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/handler-methods/@RequestBody' },
+                    ]
+                  },
+                  { text: '异常', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/exceptions' },
+                  { text: '控制器增强', link: '/framework/spring/spring-framework/spring-web-mvc/annotated-controllers/controller-advice' },
                 ]
               },
               {
