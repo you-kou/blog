@@ -152,6 +152,17 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: '设计API',
+              items: [
+                {
+                  text: '模拟API',
+                  items: [
+                    { text: '配置并使用Postman模拟服务器', link: '/tool/postman/design-apis/mock-apis/set-up-mock-servers' },
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -215,6 +226,17 @@ export default defineConfig({
                 { text: '原型模式', link: '/specification/design-patterns/creational-patterns/prototype' },
                 { text: '建造者模式', link: '/specification/design-patterns/creational-patterns/builder' },
                 { text: '创建者模式对比', link: '/specification/design-patterns/creational-patterns/comparison-of-creational-patterns' },
+              ]
+            },
+            {
+              text: '结构型模式',
+              link: '/specification/design-patterns/structural-patterns',
+              items: [
+                { text: '代理模式', link: '/specification/design-patterns/structural-patterns/proxy' },
+                { text: '适配器模式', link: '/specification/design-patterns/structural-patterns/adapter' },
+                { text: '装饰者模式', link: '/specification/design-patterns/structural-patterns/decorator' },
+                { text: '桥接模式', link: '/specification/design-patterns/structural-patterns/bridge' },
+                { text: '外观模式', link: '/specification/design-patterns/structural-patterns/facade' },
               ]
             }
           ]

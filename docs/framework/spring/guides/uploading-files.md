@@ -153,7 +153,7 @@ public class StorageProperties {
 	/**
 	 * Folder location for storing files
 	 */
-	private String location = "upload-dir";
+	private String location;
 
 	public String getLocation() {
 		return location;
@@ -309,51 +309,33 @@ public class FileSystemStorageService implements StorageService {
 }
 ```
 
-## 创建 HTML 模板
+## 配置静态资源映射
 
-以下是一个 Thymeleaf 模板示例（位于 `src/main/resources/templates/uploadForm.html`），展示了如何上传文件并显示已上传的文件列表：
+为了让上传的文件可以通过 URL 访问，需要配置静态资源映射。在 Spring Boot 中，可以通过实现 `WebMvcConfigurer` 来添加自定义的静态资源映射：
 
-```html
+```java
+package com.example.uploadingfiles.config;
 
-<html xmlns:th="https://www.thymeleaf.org">
-<body>
+import com.example.uploadingfiles.storage.StorageProperties;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-<div th:if="${message}">
-    <h2 th:text="${message}"/>
-</div>
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
 
-<div>
-    <form method="POST" enctype="multipart/form-data" action="/">
-        <table>
-            <tr>
-                <td>File to upload:</td>
-                <td><input type="file" name="file"/></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Upload"/></td>
-            </tr>
-        </table>
-    </form>
-</div>
+    @Autowired
+    private StorageProperties properties;
 
-<div>
-    <ul>
-        <li th:each="file : ${files}">
-            <a th:href="${file}" th:text="${file}"/>
-        </li>
-    </ul>
-</div>
-
-</body>
-</html>
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // 将本地文件目录映射为 /uploads/**
+        registry.addResourceHandler("/uploads/**")
+                .addResourceLocations("file:" + properties.getLocation() + "/");
+    }
+}
 ```
-
-这个模板有三个部分：
-
-- 顶部的可选消息，Spring MVC 在此处写入一个闪存作用域的消息。
-- 允许用户上传文件的表单。
-- 从后端提供的文件列表。
 
 ## 调整文件上传限制
 

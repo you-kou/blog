@@ -50,3 +50,31 @@ try (InputStream in = u.toURL().openStream()) {
 - **`DirectoryNotEmptyException`** —— 如果指定了 `REPLACE_EXISTING` 选项，但目标文件是非空目录，导致文件无法替换。
 - **`UnsupportedOperationException`** —— 如果 `options` 包含不受支持的复制选项。
 - **`SecurityException`** —— 如果安装了安全管理器，在默认提供者的情况下，会调用 `checkWrite` 方法检查是否具有写入文件的权限。如果指定了 `REPLACE_EXISTING` 选项，还会调用安全管理器的 `checkDelete` 方法检查是否可以删除已存在的文件。
+
+### createDirectories
+
+```java
+public static Path createDirectories(Path dir, FileAttribute<?>... attrs) throws IOException
+```
+
+通过首先创建所有不存在的父目录来创建一个目录。与 createDirectory 方法不同，如果目录无法创建因为它已经存在，则不会抛出异常。
+attrs 参数是可选的文件属性，在创建不存在的目录时原子性地设置。每个文件属性通过其名称进行标识。如果数组中包含多个相同名称的属性，则忽略除最后一个出现的属性之外的所有属性。
+
+如果此方法失败，可能会在创建了一些父目录，但没有创建所有父目录后失败。
+
+**参数**
+
+- **`dir`**：要创建的目录。
+
+- **`attrs`**：可选的文件属性列表，在创建目录时原子性地设置。
+
+**返回值**：
+
+创建的目录。
+
+**抛出异常**：
+
+- **`UnsupportedOperationException`**：如果属性数组包含无法在创建目录时原子性设置的属性。
+- **`FileAlreadyExistsException`**：如果目录 dir 已存在但不是一个目录（可选的具体异常）。
+- **`IOException`**：如果发生 I/O 错误。
+- **`SecurityException`**：在默认提供程序情况下，如果安装了安全管理器，会在尝试创建目录前调用 `checkWrite` 方法，并在检查每个父目录时调用 `checkRead` 方法。如果 `dir` 不是绝对路径，则可能需要调用其 `toAbsolutePath` 方法获取绝对路径，这可能触发安全管理器的 `checkPropertyAccess` 方法来检查对系统属性 `user.dir` 的访问权限。

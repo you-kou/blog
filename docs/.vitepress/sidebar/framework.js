@@ -168,6 +168,18 @@ export default [
         text: 'API',
         collapsed: true,
         items: [
+          {
+            text: 'org.springframework.util',
+            items: [
+              { text: 'FileSystemUtils', link: '/framework/spring/api/org.springframework.util/FileSystemUtils' },
+            ]
+          },
+          {
+            text: 'org.springframework.web.util.pattern',
+            items: [
+              { text: 'PathPattern', link: '/framework/spring/api/org.springframework.util/PathPattern' },
+            ]
+          },
           { text: 'HttpStatus', link: '/framework/spring/api/HttpStatus' },
           { text: 'ResponseEntity', link: '/framework/spring/api/ResponseEntity' },
         ]
