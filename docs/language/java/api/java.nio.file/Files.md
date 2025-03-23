@@ -78,3 +78,46 @@ attrs 参数是可选的文件属性，在创建不存在的目录时原子性�
 - **`FileAlreadyExistsException`**：如果目录 dir 已存在但不是一个目录（可选的具体异常）。
 - **`IOException`**：如果发生 I/O 错误。
 - **`SecurityException`**：在默认提供程序情况下，如果安装了安全管理器，会在尝试创建目录前调用 `checkWrite` 方法，并在检查每个父目录时调用 `checkRead` 方法。如果 `dir` 不是绝对路径，则可能需要调用其 `toAbsolutePath` 方法获取绝对路径，这可能触发安全管理器的 `checkPropertyAccess` 方法来检查对系统属性 `user.dir` 的访问权限。
+
+### walk
+
+```java
+public static Stream<Path> walk(Path start, int maxDepth, FileVisitOption... options) throws IOException
+```
+
+返回一个 `Stream`，按需遍历以给定起始文件为根的文件树。文件树以深度优先方式遍历，流中的元素是 `Path` 对象，就像通过起始路径解析相对路径一样获得。
+
+流在消费元素时遍历文件树。返回的流保证至少包含一个元素，即起始文件本身。对于访问的每个文件，流会尝试读取其 `BasicFileAttributes`。如果文件是目录且可以成功打开，目录中的条目及其后代将在流中紧随其后。当所有条目都被访问后，目录将关闭，文件树遍历继续到目录的下一个同级目录。
+
+该流是弱一致性的。在迭代过程中不会冻结文件树，因此它可能（也可能不会）反映调用此方法后对文件树的更新。
+
+默认情况下，此方法不会自动跟随符号链接。如果 `options` 参数包含 `FOLLOW_LINKS` 选项，则跟随符号链接。在跟随链接时，如果无法读取目标的属性，则此方法尝试获取符号链接本身的 `BasicFileAttributes`。
+
+如果 `options` 参数包含 `FOLLOW_LINKS` 选项，则流会跟踪访问过的目录，以便检测循环。当目录中有一个条目是该目录的祖先时，就会出现循环。循环检测通过记录目录的文件键（file-key）完成，或者在没有文件键的情况下，调用 `isSameFile` 方法来测试目录是否与某个祖先相同。如果检测到循环，则将其作为 `FileSystemLoopException` 的实例处理为 I/O 错误。
+
+`maxDepth` 参数是要访问的最大目录层级。值为 `0` 表示仅访问起始文件（除非安全管理器拒绝）。值为 `MAX_VALUE` 可用于表示访问所有层级。
+
+当安装了安全管理器并且它拒绝访问某个文件（或目录）时，该文件将被忽略，不包含在流中。
+
+返回的流包含对一个或多个打开目录的引用。通过关闭流来关闭目录。
+
+如果在此方法返回后访问目录时抛出 `IOException`，它将被封装在 `UncheckedIOException` 中，并在导致访问的方法中抛出。
+
+**API 注释：**
+ 此方法必须在 `try-with-resources` 语句或类似控制结构中使用，以确保在流操作完成后及时关闭流的打开目录。
+
+**参数：**
+
+- `start` - 起始文件
+- `maxDepth` - 要访问的最大目录层级
+- `options` - 配置遍历的选项
+
+**返回：**
+
+`Stream<Path>`
+
+**抛出：**
+
+- `IllegalArgumentException` - 如果 `maxDepth` 参数为负数
+- `SecurityException` - 如果安全管理器拒绝访问起始文件。对于默认提供者，会调用 `checkRead` 方法检查目录的读取权限
+- `IOException` - 如果在访问起始文件时抛出 I/O 错误
