@@ -186,7 +186,7 @@ export default [
           {
             text: 'org.springframework.web.util.pattern',
             items: [
-              { text: 'PathPattern', link: '/framework/spring/api/org.springframework.util/PathPattern' },
+              { text: 'PathPattern', link: '/framework/spring/api/org.springframework.web.util.pattern/PathPattern' },
             ]
           },
           { text: 'HttpStatus', link: '/framework/spring/api/HttpStatus' },
