@@ -1,4 +1,4 @@
-const catalog = 'language';
+const catalog = 'framework';
 
 export default [
   { text: '编程框架', link: '/framework/framework' },
