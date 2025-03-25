@@ -195,4 +195,41 @@ export default [
       }
     ]
   },
+  {
+    text: 'Payload',
+    collapsed: true,
+    items: [
+      {
+        text: '基础',
+        items: [
+          {
+            text: '入门指南',
+            items: [
+              { text: '什么是 Payload？', link: `/${catalog}/payload/basics/getting-started/what-is-payload` },
+              { text: 'Payload 概念', link: `/${catalog}/payload/basics/getting-started/concepts` },
+              { text: '安装', link: `/${catalog}/payload/basics/getting-started/installation` },
+            ]
+          },
+          {
+            text: '配置',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/basics/configuration/overview` },
+              { text: '集合', link: `/${catalog}/payload/basics/configuration/collections` },
+            ]
+          },
+        ]
+      },
+      {
+        text: '特性',
+        items: [
+          {
+            text: '管理',
+            items: [
+              { text: '什么是 Payload？', link: `/${catalog}/payload/basics/getting-started/what-is-payload` },
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]
