@@ -215,6 +215,8 @@ export default [
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/configuration/overview` },
               { text: '集合', link: `/${catalog}/payload/basics/configuration/collections` },
+              { text: 'I18n', link: `/${catalog}/payload/basics/configuration/i18n` },
+              { text: '本地化', link: `/${catalog}/payload/basics/configuration/localization` },
             ]
           },
         ]
