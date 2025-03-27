@@ -186,7 +186,7 @@ export default [
           {
             text: 'org.springframework.web.multipart',
             items: [
-              { text: 'FileSystemUtils', link: '/framework/spring/api/org.springframework.web.multipart/MultipartFile' },
+              { text: 'MultipartFile', link: '/framework/spring/api/org.springframework.web.multipart/MultipartFile' },
             ]
           },
           {
