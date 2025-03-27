@@ -237,6 +237,8 @@ export default defineConfig({
                 { text: '装饰者模式', link: '/specification/design-patterns/structural-patterns/decorator' },
                 { text: '桥接模式', link: '/specification/design-patterns/structural-patterns/bridge' },
                 { text: '外观模式', link: '/specification/design-patterns/structural-patterns/facade' },
+                { text: '组合模式', link: '/specification/design-patterns/structural-patterns/composite' },
+                { text: '享元模式', link: '/specification/design-patterns/structural-patterns/flyweight' },
               ]
             }
           ]
