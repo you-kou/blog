@@ -184,6 +184,12 @@ export default [
             ]
           },
           {
+            text: 'org.springframework.web.multipart',
+            items: [
+              { text: 'FileSystemUtils', link: '/framework/spring/api/org.springframework.web.multipart/MultipartFile' },
+            ]
+          },
+          {
             text: 'org.springframework.web.util.pattern',
             items: [
               { text: 'PathPattern', link: '/framework/spring/api/org.springframework.web.util.pattern/PathPattern' },
