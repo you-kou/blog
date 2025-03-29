@@ -225,6 +225,36 @@ export default [
               { text: '本地化', link: `/${catalog}/payload/basics/configuration/localization` },
             ]
           },
+          {
+            text: '数据库',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/basics/database/overview` },
+              { text: 'Postgres', link: `/${catalog}/payload/basics/database/postgres` },
+            ]
+          },
+          {
+            text: '字段',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/basics/fields/overview` },
+            ]
+          },
+          {
+            text: '访问控制',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/basics/access-control/overview` },
+            ]
+          },
+        ]
+      },
+      {
+        text: '数据管理',
+        items: [
+          {
+            text: 'REST API',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/managing-data/rest-api/overview` },
+            ]
+          }
         ]
       },
       {
@@ -233,9 +263,15 @@ export default [
           {
             text: '管理',
             items: [
-              { text: '什么是 Payload？', link: `/${catalog}/payload/basics/getting-started/what-is-payload` },
+              { text: '概述', link: `/${catalog}/payload/features/admin/overview` },
             ]
-          }
+          },
+          {
+            text: '上传',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/features/upload/overview` },
+            ]
+          },
         ]
       }
     ]
