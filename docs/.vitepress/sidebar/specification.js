@@ -94,7 +94,8 @@ export default [
                             {
                                 text: 'HTTP 标头',
                                 items: [
-                                    { text: 'Content-Disposition', link: '/specification/protocol/http/reference/headers/Content-Disposition' },
+                                    { text: 'Content-Disposition', link: `/${catalog}/protocol/http/reference/headers/Content-Disposition` },
+                                    { text: 'Location', link: `/${catalog}/protocol/http/reference/headers/Location` },
                                 ]
                             }
                         ]

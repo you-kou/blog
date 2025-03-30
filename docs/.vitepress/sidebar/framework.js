@@ -236,6 +236,7 @@ export default [
             text: '字段',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/fields/overview` },
+              { text: 'Row', link: `/${catalog}/payload/basics/fields/row` },
               { text: 'Text', link: `/${catalog}/payload/basics/fields/text` },
             ]
           },
