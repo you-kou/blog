@@ -190,6 +190,12 @@ export default [
             ]
           },
           {
+            text: 'org.springframework.web.bind.annotation',
+            items: [
+              { text: 'ControllerAdvice', link: '/framework/spring/api/org.springframework.web.bind.annotation/ControllerAdvice' },
+            ]
+          },
+          {
             text: 'org.springframework.web.util.pattern',
             items: [
               { text: 'PathPattern', link: '/framework/spring/api/org.springframework.web.util.pattern/PathPattern' },
