@@ -242,7 +242,10 @@ export default [
             text: '字段',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/fields/overview` },
+              { text: 'Relationship', link: `/${catalog}/payload/basics/fields/relationship` },
+              { text: 'Join', link: `/${catalog}/payload/basics/fields/join` },
               { text: 'Row', link: `/${catalog}/payload/basics/fields/row` },
+              { text: 'Select', link: `/${catalog}/payload/basics/fields/select` },
               { text: 'Text', link: `/${catalog}/payload/basics/fields/text` },
             ]
           },

@@ -1,6 +1,6 @@
-# 文本字段
+# 单行文本字段
 
-文本字段是最常用的字段之一。它将一个字符串保存到数据库，并为管理面板提供一个简单的文本输入。
+单行文本字段是最常用的字段之一。它将一个字符串保存到数据库，并为管理面板提供一个简单的文本输入。
 
 ![Shows a text field and read-only text field in the Payload Admin Panel](https://payloadcms.com/images/docs/fields/text.png)
 
