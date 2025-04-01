@@ -242,17 +242,26 @@ export default [
             text: '字段',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/fields/overview` },
+              { text: 'Array', link: `/${catalog}/payload/basics/fields/array` },
               { text: 'Relationship', link: `/${catalog}/payload/basics/fields/relationship` },
               { text: 'Join', link: `/${catalog}/payload/basics/fields/join` },
               { text: 'Row', link: `/${catalog}/payload/basics/fields/row` },
               { text: 'Select', link: `/${catalog}/payload/basics/fields/select` },
               { text: 'Text', link: `/${catalog}/payload/basics/fields/text` },
+              { text: 'UI', link: `/${catalog}/payload/basics/fields/ui` },
+              { text: 'Upload', link: `/${catalog}/payload/basics/fields/upload` },
             ]
           },
           {
             text: '访问控制',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/access-control/overview` },
+            ]
+          },
+          {
+            text: '钩子',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/basics/hooks/overview` },
             ]
           },
         ]
