@@ -243,6 +243,7 @@ export default [
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/fields/overview` },
               { text: 'Array', link: `/${catalog}/payload/basics/fields/array` },
+              { text: 'Date', link: `/${catalog}/payload/basics/fields/date` },
               { text: 'Radio Group', link: `/${catalog}/payload/basics/fields/radio` },
               { text: 'Relationship', link: `/${catalog}/payload/basics/fields/relationship` },
               { text: 'Join', link: `/${catalog}/payload/basics/fields/join` },
