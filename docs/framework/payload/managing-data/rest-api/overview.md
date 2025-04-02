@@ -51,7 +51,9 @@ REST 查询参数：
 
 ### 登录
 
+::: details
 <!--@include: ./auth-operations/login.md-->
+:::
 
 ## 全局（Globals）
 
