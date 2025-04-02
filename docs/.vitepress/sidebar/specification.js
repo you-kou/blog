@@ -77,6 +77,7 @@ export default [
                 link: '/specification/design-patterns/behavioral-patterns/',
                 items: [
                     { text: '模板方法模式', link: '/specification/design-patterns/behavioral-patterns/template-method' },
+                    { text: '策略模式', link: '/specification/design-patterns/behavioral-patterns/strategy' },
                 ]
             }
         ]
