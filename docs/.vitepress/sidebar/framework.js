@@ -289,6 +289,14 @@ export default [
             ]
           },
           {
+            text: '认证',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/features/authentication/overview` },
+              { text: 'JWT 策略', link: `/${catalog}/payload/features/authentication/jwt` },
+              { text: '令牌数据', link: `/${catalog}/payload/features/authentication/token-data` },
+            ]
+          },
+          {
             text: '上传',
             items: [
               { text: '概述', link: `/${catalog}/payload/features/upload/overview` },

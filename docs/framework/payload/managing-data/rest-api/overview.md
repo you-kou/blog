@@ -49,6 +49,10 @@ REST 查询参数：
 | **忘记密码** | POST | `/api/{user-collection}/forgot-password` |
 | **重置密码** | POST | `/api/{user-collection}/reset-password`  |
 
+### 登录
+
+<!--@include: ./auth-operations/login.md-->
+
 ## 全局（Globals）
 
 全局对象不能被创建或删除，因此仅提供以下两个 REST 端点：
