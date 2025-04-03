@@ -34,6 +34,12 @@ REST 查询参数：
 | **删除**       | DELETE | `/api/{collection-slug}`       |
 | **按 ID 删除** | DELETE | `/api/{collection-slug}/{id}`  |
 
+### 查找
+
+::: details
+<!--@include: ./collections/find.md-->
+:::
+
 ## 认证操作（Auth Operations）
 
 启用了认证（Auth）的集合还会提供以下端点：
