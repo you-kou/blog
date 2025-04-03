@@ -213,6 +213,7 @@ export default [
     items: [
       {
         text: '基础',
+        collapsed: true,
         items: [
           {
             text: '入门指南',
@@ -270,6 +271,7 @@ export default [
       },
       {
         text: '数据管理',
+        collapsed: true,
         items: [
           {
             text: 'REST API',
@@ -281,6 +283,7 @@ export default [
       },
       {
         text: '特性',
+        collapsed: true,
         items: [
           {
             text: '管理',

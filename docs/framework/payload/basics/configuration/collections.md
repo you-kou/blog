@@ -64,7 +64,7 @@ export const Posts: CollectionConfig = {
 | `slug`*            | 唯一的、URL 友好的字符串，作为该集合的标识符。               |
 | `timestamps`       | 设置为 `false` 时禁用文档自动生成的 `createdAt` 和 `updatedAt` 时间戳。 |
 | `typescript`       | 包含 `interface` 属性的对象，定义用于生成 TypeScript 模型的文本。如果未定义，将自动从 `slug` 生成。 |
-| `upload`           | 如果希望该集合支持文件上传，可在此指定选项。更多详情请查看 [Uploads 文档](#)。 |
+| `upload`           | 如果希望该集合支持文件上传，可在此指定选项。更多详情请查看 [Uploads 文档](/framework/payload/features/upload/overview.html)。 |
 | `versions`         | 设置为 `true` 启用默认版本配置，也可以传入对象属性进行详细配置。更多详情。 |
 | `defaultPopulate`  | 指定从其他文档中填充该集合时要选择的字段。更多详情。         |
 | `indexes`          | 定义该集合的复合索引。可用于加速查询/排序多个字段，或确保多个字段之间的唯一性。 |
