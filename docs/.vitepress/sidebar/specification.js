@@ -79,6 +79,7 @@ export default [
                     { text: '模板方法模式', link: '/specification/design-patterns/behavioral-patterns/template-method' },
                     { text: '策略模式', link: '/specification/design-patterns/behavioral-patterns/strategy' },
                     { text: '命令模式', link: '/specification/design-patterns/behavioral-patterns/command' },
+                    { text: '责任链模式', link: '/specification/design-patterns/behavioral-patterns/chain-of-responsibility' },
                 ]
             }
         ]
