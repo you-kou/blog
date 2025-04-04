@@ -80,6 +80,7 @@ export default [
                     { text: '策略模式', link: '/specification/design-patterns/behavioral-patterns/strategy' },
                     { text: '命令模式', link: '/specification/design-patterns/behavioral-patterns/command' },
                     { text: '责任链模式', link: '/specification/design-patterns/behavioral-patterns/chain-of-responsibility' },
+                    { text: '状态模式', link: '/specification/design-patterns/behavioral-patterns/state' },
                 ]
             }
         ]

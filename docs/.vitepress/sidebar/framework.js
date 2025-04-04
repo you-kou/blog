@@ -245,6 +245,7 @@ export default [
               { text: '概述', link: `/${catalog}/payload/basics/fields/overview` },
               { text: 'Array', link: `/${catalog}/payload/basics/fields/array` },
               { text: 'Date', link: `/${catalog}/payload/basics/fields/date` },
+              { text: 'Number', link: `/${catalog}/payload/basics/fields/number` },
               { text: 'Radio Group', link: `/${catalog}/payload/basics/fields/radio` },
               { text: 'Relationship', link: `/${catalog}/payload/basics/fields/relationship` },
               { text: 'Join', link: `/${catalog}/payload/basics/fields/join` },
@@ -274,11 +275,23 @@ export default [
         collapsed: true,
         items: [
           {
+            text: '本地 API',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/managing-data/local-api/overview` },
+            ]
+          },
+          {
             text: 'REST API',
             items: [
               { text: '概述', link: `/${catalog}/payload/managing-data/rest-api/overview` },
             ]
-          }
+          },
+          {
+            text: '查询',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/managing-data/queries/overview` },
+            ]
+          },
         ]
       },
       {
