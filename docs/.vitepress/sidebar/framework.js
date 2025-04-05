@@ -302,6 +302,7 @@ export default [
             text: '管理',
             items: [
               { text: '概述', link: `/${catalog}/payload/features/admin/overview` },
+              { text: '元数据', link: `/${catalog}/payload/features/admin/metadata` },
             ]
           },
           {
