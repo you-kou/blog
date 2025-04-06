@@ -38,6 +38,11 @@ const list = ref([
     href: 'https://code-snippet.online/tool/maven/introduction.html',
     text: 'Apache Maven 是一款软件项目管理和构建工具，基于项目对象模型（POM）的概念，Maven 能够通过 一个集中的配置信息 管理项目的构建、报告和文档。',
     style: 1
+  }, {
+    title: 'Java',
+    href: 'https://code-snippet.online/language/java/',
+    text: 'Oracle Java 是全球排名第一的编程语言和开发平台。它降低了成本，缩短了开发周期，推动了创新，并提高了应用服务质量。全球有数百万开发者在运行超过 600 亿个 Java 虚拟机，Java 继续成为企业和开发者首选的开发平台。',
+    style: 2
   },
 ])
 </script>

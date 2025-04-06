@@ -3,6 +3,7 @@ const catalog = 'language';
 export default [
     {
         text: 'Java',
+        link: `/${catalog}/java/`,
         items: [
             {
                 text: 'API',
@@ -16,7 +17,13 @@ export default [
                             { text: 'Paths', link: `/${catalog}/java/api/java.nio.file/Paths` },
                             { text: 'StandardCopyOption', link: `/${catalog}/java/api/java.nio.file/StandardCopyOption` },
                         ]
-                    }
+                    },
+                    {
+                        text: 'jakarta.persistence',
+                        items: [
+                            { text: 'Column', link: `/${catalog}/java/api/jakarta.persistence/Column` },
+                        ]
+                    },
                 ]
             }
         ]
