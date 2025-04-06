@@ -49,7 +49,7 @@ export default [
             { text: '软件设计原则', link: '/specification/design-patterns/software-design-principles' },
             {
                 text: '创建者模式',
-                link: '/specification/design-patterns/creational-pattern/',
+                link: '/specification/design-patterns/creational-patterns/',
                 items: [
                     { text: '单例设计模式', link: '/specification/design-patterns/creational-patterns/singleton' },
                     { text: '工厂模式', link: '/specification/design-patterns/creational-patterns/factory' },
