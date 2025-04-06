@@ -22,6 +22,8 @@ export default [
                         text: 'jakarta.persistence',
                         items: [
                             { text: 'Column', link: `/${catalog}/java/api/jakarta.persistence/Column` },
+                            { text: 'Entity', link: `/${catalog}/java/api/jakarta.persistence/Entity` },
+                            { text: 'Table', link: `/${catalog}/java/api/jakarta.persistence/Table` },
                         ]
                     },
                 ]
