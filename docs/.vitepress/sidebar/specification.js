@@ -44,12 +44,12 @@ export default [
         text: '设计模式',
         collapsed: true,
         items: [
-            { text: '设计模式概述', link: '/specification/design-patterns/overview-of-design-patterns' },
+            { text: '设计模式概述', link: '/specification/design-patterns/' },
             { text: 'UML图', link: '/specification/design-patterns/uml-diagram' },
             { text: '软件设计原则', link: '/specification/design-patterns/software-design-principles' },
             {
                 text: '创建者模式',
-                link: '/specification/design-patterns/creational-pattern',
+                link: '/specification/design-patterns/creational-pattern/',
                 items: [
                     { text: '单例设计模式', link: '/specification/design-patterns/creational-patterns/singleton' },
                     { text: '工厂模式', link: '/specification/design-patterns/creational-patterns/factory' },
@@ -61,7 +61,7 @@ export default [
             },
             {
                 text: '结构型模式',
-                link: '/specification/design-patterns/structural-patterns',
+                link: '/specification/design-patterns/structural-patterns/',
                 items: [
                     { text: '代理模式', link: '/specification/design-patterns/structural-patterns/proxy' },
                     { text: '适配器模式', link: '/specification/design-patterns/structural-patterns/adapter' },
@@ -83,8 +83,21 @@ export default [
                     { text: '状态模式', link: '/specification/design-patterns/behavioral-patterns/state' },
                     { text: '观察者模式', link: '/specification/design-patterns/behavioral-patterns/observer' },
                     { text: '中介者模式', link: '/specification/design-patterns/behavioral-patterns/mediator' },
+                    { text: '迭代器模式', link: '/specification/design-patterns/behavioral-patterns/iterator' },
+                    { text: '访问者模式', link: '/specification/design-patterns/behavioral-patterns/visitor' },
+                    { text: '备忘录模式', link: '/specification/design-patterns/behavioral-patterns/memento' },
+                    { text: '解释器模式', link: '/specification/design-patterns/behavioral-patterns/interpreter' },
                 ]
-            }
+            },
+            {
+                text: '自定义Spring框架',
+                items: [
+                    { text: 'Spring 使用回顾', link: '/specification/design-patterns/customizing-spring/spring-review' },
+                    { text: 'Spring 核心功能结构', link: '/specification/design-patterns/customizing-spring/spring-core' },
+                    { text: 'Spring IOC 相关接口分析', link: '/specification/design-patterns/customizing-spring/spring-ioc' },
+                    { text: '自定义 Spring IOC', link: '/specification/design-patterns/customizing-spring/customizing-spring-ioc' },
+                ]
+            },
         ]
     },
     {
