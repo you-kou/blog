@@ -65,7 +65,7 @@ const list = ref([
               <v-img :src="item.avatar"></v-img>
             </v-avatar>
           </template>
-          <v-card-subtitle :title="item.subtitle">{{ item.subtitle }}</v-card-subtitle>
+          <v-card-subtitle v-if="item.subtitle" :title="item.subtitle">{{ item.subtitle }}</v-card-subtitle>
           <v-card-text>{{ item.text }}</v-card-text>
         </v-card>
 
