@@ -260,6 +260,7 @@ export default [
             text: '访问控制',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/access-control/overview` },
+              { text: '集合', link: `/${catalog}/payload/basics/access-control/collections` },
             ]
           },
           {
@@ -310,6 +311,7 @@ export default [
             items: [
               { text: '概述', link: `/${catalog}/payload/features/authentication/overview` },
               { text: 'JWT 策略', link: `/${catalog}/payload/features/authentication/jwt` },
+              { text: 'API 密钥策略', link: `/${catalog}/payload/features/authentication/api-keys` },
               { text: '令牌数据', link: `/${catalog}/payload/features/authentication/token-data` },
             ]
           },
@@ -317,6 +319,12 @@ export default [
             text: '上传',
             items: [
               { text: '概述', link: `/${catalog}/payload/features/upload/overview` },
+            ]
+          },
+          {
+            text: '邮件',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/features/email/overview` },
             ]
           },
         ]

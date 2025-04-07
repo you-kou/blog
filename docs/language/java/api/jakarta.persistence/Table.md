@@ -1,4 +1,4 @@
-# Table
+# [Table](https://jakarta.ee/specifications/platform/10/apidocs/jakarta/persistence/table)
 
 ```java
 @Target(TYPE)

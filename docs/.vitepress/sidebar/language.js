@@ -23,6 +23,9 @@ export default [
                         items: [
                             { text: 'Column', link: `/${catalog}/java/api/jakarta.persistence/Column` },
                             { text: 'Entity', link: `/${catalog}/java/api/jakarta.persistence/Entity` },
+                            { text: 'GeneratedValue', link: `/${catalog}/java/api/jakarta.persistence/GeneratedValue` },
+                            { text: 'GenerationType', link: `/${catalog}/java/api/jakarta.persistence/GenerationType` },
+                            { text: 'Id', link: `/${catalog}/java/api/jakarta.persistence/Id` },
                             { text: 'Table', link: `/${catalog}/java/api/jakarta.persistence/Table` },
                         ]
                     },
