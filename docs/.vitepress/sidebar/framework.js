@@ -237,6 +237,7 @@ export default [
             text: '数据库',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/database/overview` },
+              { text: '事务', link: `/${catalog}/payload/basics/database/transactions` },
               { text: 'Postgres', link: `/${catalog}/payload/basics/database/postgres` },
             ]
           },
@@ -268,6 +269,7 @@ export default [
             text: '钩子',
             items: [
               { text: '概述', link: `/${catalog}/payload/basics/hooks/overview` },
+              { text: '集合', link: `/${catalog}/payload/basics/hooks/collections` },
             ]
           },
         ]
@@ -314,6 +316,12 @@ export default [
               { text: 'JWT 策略', link: `/${catalog}/payload/features/authentication/jwt` },
               { text: 'API 密钥策略', link: `/${catalog}/payload/features/authentication/api-keys` },
               { text: '令牌数据', link: `/${catalog}/payload/features/authentication/token-data` },
+            ]
+          },
+          {
+            text: '版本',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/features/versions/overview` },
             ]
           },
           {
