@@ -306,6 +306,7 @@ export default [
             text: '管理',
             items: [
               { text: '概述', link: `/${catalog}/payload/features/admin/overview` },
+              { text: '文档锁定', link: `/${catalog}/payload/features/admin/locked-documents` },
               { text: '元数据', link: `/${catalog}/payload/features/admin/metadata` },
             ]
           },
@@ -315,6 +316,7 @@ export default [
               { text: '概述', link: `/${catalog}/payload/features/authentication/overview` },
               { text: 'JWT 策略', link: `/${catalog}/payload/features/authentication/jwt` },
               { text: 'API 密钥策略', link: `/${catalog}/payload/features/authentication/api-keys` },
+              { text: '自定义认证策略', link: `/${catalog}/payload/features/authentication/custom-strategies` },
               { text: '令牌数据', link: `/${catalog}/payload/features/authentication/token-data` },
             ]
           },
@@ -334,6 +336,13 @@ export default [
             text: '邮件',
             items: [
               { text: '概述', link: `/${catalog}/payload/features/email/overview` },
+            ]
+          },
+          {
+            text: '作业队列',
+            items: [
+              { text: '概述', link: `/${catalog}/payload/features/jobs-queue/overview` },
+              { text: '任务', link: `/${catalog}/payload/features/jobs-queue/tasks` },
             ]
           },
         ]
