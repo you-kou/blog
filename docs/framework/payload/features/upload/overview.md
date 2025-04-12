@@ -76,7 +76,7 @@ export const Media: CollectionConfig = {
 
 | **选项**                     | **描述**                                                     |
 | ---------------------------- | ------------------------------------------------------------ |
-| **adminThumbnail**           | 设置管理面板如何显示该集合的缩略图。 [更多](#)               |
+| **adminThumbnail**           | 设置管理面板如何显示该集合的缩略图。                         |
 | **bulkUpload**               | 允许用户在列表视图中批量上传，默认值为 `true`。              |
 | **cacheTags**                | 设置为 `false` 可在 UI 中禁用管理面板缩略图组件的缓存标签。适用于 CDN 不允许特定缓存查询的情况。 |
 | **crop**                     | 设置为 `false` 以在管理面板中禁用裁剪工具。默认启用。 [更多](#) |
@@ -90,7 +90,7 @@ export const Media: CollectionConfig = {
 | **handlers**                 | 请求处理程序数组，在获取文件时执行。如果处理程序返回 `Response`，则直接发送给客户端，否则 Payload 将检索并返回文件。 |
 | **imageSizes**               | 指定后，上传的图像将根据这些尺寸自动调整大小。 [更多](#)     |
 | **mimeTypes**                | 限制文件选择器中的 `mimeType`，接受有效 `mimeType` 或 `mimeType` 通配符数组。 [更多](#) |
-| **pasteURL**                 | 控制是否允许通过粘贴远程 URL 上传文件，默认启用。可设置为 `false` 禁用，或传递一个包含 `allowList` 的对象来限定允许的远程 URL。 [更多](#) |
+| **pasteURL**                 | 控制是否允许通过粘贴远程 URL 上传文件，默认启用。可设置为 `false` 禁用，或传递一个包含 `allowList` 的对象来限定允许的远程 URL。 |
 | **resizeOptions**            | 传递给 Sharp 图像库的对象，用于调整上传文件的大小。 [更多](#) |
 | **staticDir**                | 用于存储媒体的文件夹目录，可以是绝对路径或相对于包含配置文件的目录，默认使用集合的 `slug`。 |
 | **trimOptions**              | 传递给 Sharp 图像库的对象，用于裁剪上传文件。 [更多](#)      |

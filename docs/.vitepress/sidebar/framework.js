@@ -1,7 +1,7 @@
 const catalog = 'framework';
 
 export default [
-  { text: '编程框架', link: '/framework/framework' },
+  { text: '编程框架', link: '/framework/' },
   {
     text: 'MyBatis',
     collapsed: true,
@@ -314,6 +314,7 @@ export default [
             text: '认证',
             items: [
               { text: '概述', link: `/${catalog}/payload/features/authentication/overview` },
+              { text: '认证邮件', link: `/${catalog}/payload/features/authentication/email` },
               { text: 'JWT 策略', link: `/${catalog}/payload/features/authentication/jwt` },
               { text: 'API 密钥策略', link: `/${catalog}/payload/features/authentication/api-keys` },
               { text: '自定义认证策略', link: `/${catalog}/payload/features/authentication/custom-strategies` },
@@ -347,6 +348,20 @@ export default [
           },
         ]
       }
+    ]
+  },
+  {
+    text: 'sharp',
+    collapsed: true,
+    items: [
+      { text: '概述', link: `/${catalog}/sharp/` },
+      {
+        text: 'API',
+        items: [
+          { text: '构造函数', link: `/${catalog}/sharp/api/constructor` },
+          { text: '合成图像', link: `/${catalog}/sharp/api/composite` },
+        ]
+      },
     ]
   }
 ]

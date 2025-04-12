@@ -44,6 +44,12 @@ const list = ref([
     avatar: 'https://www.oracle.com/asset/web/favicons/favicon-32.png',
     text: 'Oracle Java 是全球排名第一的编程语言和开发平台。它降低了成本，缩短了开发周期，推动了创新，并提高了应用服务质量。全球有数百万开发者在运行超过 600 亿个 Java 虚拟机，Java 继续成为企业和开发者首选的开发平台。',
     style: 2
+  }, {
+    title: 'sharp',
+    href: 'https://code-snippet.online/framework/sharp/',
+    avatar: 'https://sharp.pixelplumbing.com/_astro/sharp-logo.CiVIswaO.svg',
+    text: '高性能 Node.js 图像处理。',
+    style: 2
   },
 ])
 </script>
