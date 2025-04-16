@@ -178,6 +178,23 @@ export default [
         collapsed: true,
         items: [
           {
+            text: 'org.springframework.core.io',
+            items: [
+              { text: 'Resource', link: '/framework/spring/api/org.springframework.core.io/Resource' },
+              { text: 'UrlResource', link: '/framework/spring/api/org.springframework.core.io/UrlResource' },
+            ]
+          },
+          {
+            text: 'org.springframework.data.domain',
+            items: [
+              { text: 'Example', link: '/framework/spring/api/org.springframework.data.domain/Example' },
+              { text: 'ExampleMatcher.GenericPropertyMatcher', link: '/framework/spring/api/org.springframework.data.domain/ExampleMatcher.GenericPropertyMatcher' },
+              { text: 'ExampleMatcher', link: '/framework/spring/api/org.springframework.data.domain/ExampleMatcher' },
+              { text: 'PageRequest', link: '/framework/spring/api/org.springframework.data.domain/PageRequest' },
+              { text: 'Sort', link: '/framework/spring/api/org.springframework.data.domain/Sort' },
+            ]
+          },
+          {
             text: 'org.springframework.util',
             items: [
               { text: 'FileSystemUtils', link: '/framework/spring/api/org.springframework.util/FileSystemUtils' },

@@ -26,7 +26,15 @@ export default [
                             { text: 'GeneratedValue', link: `/${catalog}/java/api/jakarta.persistence/GeneratedValue` },
                             { text: 'GenerationType', link: `/${catalog}/java/api/jakarta.persistence/GenerationType` },
                             { text: 'Id', link: `/${catalog}/java/api/jakarta.persistence/Id` },
+                            { text: 'JoinColumn', link: `/${catalog}/java/api/jakarta.persistence/JoinColumn` },
+                            { text: 'OneToOne', link: `/${catalog}/java/api/jakarta.persistence/OneToOne` },
                             { text: 'Table', link: `/${catalog}/java/api/jakarta.persistence/Table` },
+                        ]
+                    },
+                    {
+                        text: 'java.util',
+                        items: [
+                            { text: 'Optional', link: `/${catalog}/java/api/java.util/Optional` },
                         ]
                     },
                 ]
