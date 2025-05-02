@@ -27,6 +27,12 @@ export default [
             text: '参考',
             items: [
               {
+                text: '使用 Spring Boot 进行开发',
+                items: [
+                  { text: 'Spring Bean 和依赖注入', link: '/framework/spring/spring-boot/reference/developing-with-spring-boot/spring-beans-and-dependency-injection' },
+                ]
+              },
+              {
                 text: '核心功能',
                 items: [
                   { text: 'SpringApplication', link: '/framework/spring/spring-boot/reference/core-features/spring-application' },
@@ -380,5 +386,23 @@ export default [
         ]
       },
     ]
+  },
+  {
+    text: 'Lodash',
+    collapsed: true,
+    items: [
+      { text: '简介', link: `/${catalog}/lodash/` },
+      {
+        text: '集合',
+        items: [
+          { text: '_.orderBy', link: `/${catalog}/lodash/collection/orderBy` },
+        ]
+      },
+    ]
+  },
+  {
+    text: 'Classnames',
+    collapsed: true,
+    link: `/${catalog}/classnames/`
   }
 ]

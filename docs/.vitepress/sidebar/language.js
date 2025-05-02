@@ -40,5 +40,21 @@ export default [
                 ]
             }
         ]
+    },
+    {
+        text: 'JavaScript',
+        items: [
+            {
+                text: '参考',
+                items: [
+                    {
+                        text: '表达式和运算符',
+                        items: [
+                            { text: '逻辑与（&&）', link: `/${catalog}/javascript/reference/operators/logical-and` }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -55,17 +55,16 @@ const list = ref([
 </script>
 
 <template>
-  <v-container>
-    <v-row align="start" justify="start">
-      <v-col v-for="item in list" lg="3" md="4" sm="6" cols="12">
-        <v-card v-if="item.style === 1" :href="item.href">
+  <v-container fluid>
+    <template v-for="item in list" :key="item.href">
+        <v-card v-if="item.style === 1" :href="item.href" class="ma-4 pa-4">
           <v-card-item>
             <v-img :src="item.banner" cover></v-img>
           </v-card-item>
           <v-card-text>{{ item.text }}</v-card-text>
         </v-card>
 
-        <v-card v-if="item.style === 2" :title="item.title" :href="item.href">
+        <v-card v-if="item.style === 2" :title="item.title" :href="item.href" class="ma-4 pa-4">
           <template v-slot:prepend>
             <v-avatar size="24">
               <v-img :src="item.avatar"></v-img>
@@ -75,16 +74,32 @@ const list = ref([
           <v-card-text>{{ item.text }}</v-card-text>
         </v-card>
 
-        <v-card v-if="item.style === 3" :title="item.title" :href="item.href">
+        <v-card v-if="item.style === 3" :title="item.title" :href="item.href" class="ma-4 pa-4">
           <v-card-subtitle v-if="item.subtitle" :title="item.subtitle">{{ item.subtitle }}</v-card-subtitle>
           <v-card-text>{{ item.text }}</v-card-text>
         </v-card>
-      </v-col>
-    </v-row>
+    </template>
   </v-container>
 </template>
 
 <style scoped>
+.v-container {
+  //column-gap: 16px;
+  column-width: 280px; /* 自动响应列数，每列最小宽度 */
+  padding: 8px;
+}
+
+.masonry {
+  column-gap: 16px;
+  column-width: 280px; /* 自动响应列数，每列最小宽度 */
+  padding: 8px;
+
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+}
+
 .vp-doc a {
   text-decoration: none;
   color: inherit;
