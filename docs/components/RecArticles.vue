@@ -50,6 +50,12 @@ const list = ref([
     avatar: 'https://sharp.pixelplumbing.com/_astro/sharp-logo.CiVIswaO.svg',
     text: '高性能 Node.js 图像处理。',
     style: 2
+  }, {
+    title: 'Sass',
+    href: 'https://code-snippet.online/framework/sass/',
+    avatar: 'https://sass-lang.com/assets/img/logos/logo.svg',
+    text: 'Sass 是世界上最成熟、稳定、强大的专业级 CSS 扩展语言。',
+    style: 2
   },
 ])
 </script>

@@ -404,5 +404,15 @@ export default [
     text: 'Classnames',
     collapsed: true,
     link: `/${catalog}/classnames/`
+  },
+  {
+    text: 'uuid',
+    collapsed: true,
+    link: `/${catalog}/uuid/`
+  },
+  {
+    text: 'Sass',
+    collapsed: true,
+    link: `/${catalog}/sass/`
   }
 ]
